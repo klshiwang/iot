@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 456 computer
 123 computer
+=======
+456
+123mmmm
+>>>>>>> b13ce20b76e7fbd6419b07f8f74a13e1406deec0
 
 modify
