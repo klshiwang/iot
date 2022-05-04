@@ -1,5 +1,14 @@
 <template>
   <div id="app">
+    <van-overlay :show="show" @click="show = false">
+      <div class="wrapper" @click.stop>
+        <div class="block" />
+        <van-button>关闭</van-button>
+      </div>
+    </van-overlay>
+    
+
+    
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -30,3 +39,23 @@ nav {
   }
 }
 </style>
+<script>
+import { Toast } from 'vant';
+export default {
+  name: 'IotMobApp',
+
+  data() {
+    return {
+      show:true
+    };
+  },
+
+  mounted() {
+    Toast('提示文本')
+  },
+
+  methods: {
+    
+  },
+};
+</script>
