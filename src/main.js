@@ -15,11 +15,15 @@ Vue.component(Button.name,Button)
  */
 
 
+
+
 //手动按需引入
 import 'vant/lib/index.css'
-import {Button,Toast,Overlay} from 'vant'
-Vue.use(Button,Toast,Overlay)
+import {Button,Toast,Overlay,Tabbar, TabbarItem} from 'vant'
 
+Vue.use(Button,Toast,Overlay)
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
 
 Vue.config.productionTip = false
 
